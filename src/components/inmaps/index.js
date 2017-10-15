@@ -7,7 +7,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import config from '../root/config';
 import { toggleNav, loadMapData } from '../../actions';
 
-import SmallHeader from '../headers/small';
+import LargeHeader from '../headers/large';
 import BoxNav from '../navs/boxnav';
 import InMapsMap from './inmapsmap';
 
@@ -50,7 +50,7 @@ class InMaps extends Component {
       <ReactCSSTransitionGroup {...config.transitionOptions}>
 
         <div>
-          <SmallHeader path="/inmaps" >
+          <LargeHeader path="/inmaps" url="https://www.dl.dropboxusercontent.com/s/dfti5bmqxhz7zfw/_DSC0440.JPG" position="20% 100%">
 
             <div className="row-fluid h-100 primary">
               <div className="container">
@@ -78,7 +78,7 @@ class InMaps extends Component {
             </div>
 
 
-          </SmallHeader>
+          </LargeHeader>
         </div>
       </ReactCSSTransitionGroup>
     );

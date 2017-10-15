@@ -23,7 +23,7 @@ class Home extends Component {
       <ReactCSSTransitionGroup {...config.transitionOptions}>
 
         <div>
-          <LargeHeader path="/" >
+          <LargeHeader path="/" url="https://www.dl.dropboxusercontent.com/s/xww0ozgqshc12a2/_DSC0002.JPG" position="20% 70%" >
 
             <div className="row-fluid h-100 primary">
               <div className="container">

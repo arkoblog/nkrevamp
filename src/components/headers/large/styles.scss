@@ -37,7 +37,11 @@ $off-white:#eaeaea;
 .header {
   height:60vh;
   background: transparent;
-  background-image: url("http://nilkantha.surge.sh/build/images/neelkantha.png");
+
+  // background-image: url("http://nilkantha.surge.sh/build/images/neelkantha.png");
+  background-repeat: no-repeat;
+  // background-position: 20% 70%;
+  background-attachment: fixed;
   margin:0 -15px;
 }
 

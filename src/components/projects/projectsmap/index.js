@@ -360,7 +360,7 @@ class ProjectsMap extends Component {
 
           </div>
 
-          <div id="projectsmap" className="row" style={{ height: '91vh' }} />
+          <div id="projectsmap" className="row" style={{ height: '100vh' }} />
 
         </div>
       </div>

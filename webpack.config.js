@@ -52,7 +52,7 @@ module.exports = removeEmpty({
 
   devServer: ifDevelopment({
     host: '0.0.0.0',
-    port: 3000,
+    port: 8080,
     stats: 'normal',
   }),
 
@@ -74,7 +74,7 @@ module.exports = removeEmpty({
 
     ifProduction(
       new ExtractTextPlugin('[name]-bundle-[hash].css'),
-      new ExtractTextPlugin('[name]-bundle.css')
+      new ExtractTextPlugin('[name]-bundle.css'),
     ),
   ]),
 });

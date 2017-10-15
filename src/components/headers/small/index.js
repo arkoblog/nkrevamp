@@ -68,23 +68,18 @@ class SamllNav extends Component {
             </div>
           </nav> */}
           <div className="small-header ">
-            <nav className="navbar small-nav fixed-top">
-
+            <div className={this.state.showNav ? 'small-nav fixed-top show' : 'small-nav fixed-top'}>
               <div className="container">
-                <div className="row">
-                  <div className="span9 col-md-6 col-sm-6 my-auto">
-                    <a className="logo" href="/">NILKANTHA MUNICIPALITY</a>
-                  </div>
-                  <div className="span3 col-md-6 col-sm-6 my-auto">
-                    {/*eslint-disable*/}
-                    <span onClick={this.toggleSideNav} className={this.state.showNav ? 'small-toggle show' : 'small-toggle'}>
-                    <i className={this.state.showNav ? 'fa fa-times' : "fa fa-bars"} aria-hidden="true" />
-                    </span>
-                    {/* eslint-enable */}
-                  </div>
-                </div>
+                <span className="logo" href="/">NILKANTHA MUNICIPALITY</span>
+                {/* eslint-disable */}
+                <span onClick={this.toggleSideNav} className={this.state.showNav ? 'small-toggle  show' : 'small-toggle '}>
+                  <i className={this.state.showNav ? 'fa fa-times' : 'fa fa-bars'} aria-hidden="true" />
+                </span>
+                {/* eslint-enable */}
+
               </div>
-            </nav>
+            </div>
+
             <div className="row-fluid " />
           </div>
 

@@ -30,12 +30,14 @@ class LargeNav extends Component {
     });
   }
   render() {
+    const url = `url("${this.props.url}")`;
+    const { position } = this.props;
     return (
       <div className={this.state.showNav ? 'wrapper show' : 'wrapper'}>
         <SideNav path={this.props.path} className={this.state.showNav ? 'large-sidebar  show' : 'large-sidebar'} />
 
         <div className="content ">
-          <div className="header ">
+          <div className="header " style={{ backgroundImage: url, backgroundPosition: position }}>
             <div className="row-fluid ">
 
               <div className="container">

@@ -263,9 +263,9 @@ class InMapsMap extends Component {
 
   render() {
     if (!this.props.isNavMinimized) {
-      return (<div id="impmapsmap" className="row " style={{ height: '91vh' }} />);
+      return (<div id="impmapsmap" className="row " style={{ height: '100vh' }} />);
     } else {
-      return (<div id="impmapsmap" className="row" style={{ height: '91vh' }} />);
+      return (<div id="impmapsmap" className="row" style={{ height: '100vh' }} />);
     }
   }
 }

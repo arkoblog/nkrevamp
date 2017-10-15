@@ -6,7 +6,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import config from '../root/config';
 import { fetchBudget, toggleNav, toggleProjectsFilter, fetchComments } from '../../actions';
 
-import SmallHeader from '../headers/small';
+import LargeHeader from '../headers/large';
 import BoxNav from '../navs/boxnav';
 
 import ProjectsMap from './projectsmap';
@@ -80,7 +80,7 @@ class Projects extends Component {
       <ReactCSSTransitionGroup {...config.transitionOptions}>
 
         <div>
-          <SmallHeader path="/projects">
+          <LargeHeader path="/projects" url="https://www.dl.dropboxusercontent.com/s/xk5mgmqc5rnn4sg/_DSC0396.JPG" position="20% 70%">
 
             <div className="row-fluid h-100 primary">
               <div className="container">
@@ -129,7 +129,7 @@ class Projects extends Component {
             </div>
 
 
-          </SmallHeader>
+          </LargeHeader>
         </div>
       </ReactCSSTransitionGroup>
     );
