@@ -1,0 +1,162 @@
+
+
+.leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
+	-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
+	-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
+	-o-transition: -o-transform 0.3s ease-out, opacity 0.3s ease-in;
+	transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+}
+
+.leaflet-cluster-spider-leg {
+	/* stroke-dashoffset (duration and function) should match with leaflet-marker-icon transform in order to track it exactly */
+	-webkit-transition: -webkit-stroke-dashoffset 0.3s ease-out, -webkit-stroke-opacity 0.3s ease-in;
+	-moz-transition: -moz-stroke-dashoffset 0.3s ease-out, -moz-stroke-opacity 0.3s ease-in;
+	-o-transition: -o-stroke-dashoffset 0.3s ease-out, -o-stroke-opacity 0.3s ease-in;
+	transition: stroke-dashoffset 0.3s ease-out, stroke-opacity 0.3s ease-in;
+}
+
+
+
+.marker-cluster-small {
+	background-color: rgba(233, 108, 116, 0.6);
+	}
+.marker-cluster-small div {
+	background-color: rgba(223,61,72, 0.6);
+	}
+
+.marker-cluster-medium {
+	background-color: rgba(233, 108, 116, 0.6);
+	}
+.marker-cluster-medium div {
+	background-color: rgba(223,61,72, 0.6);
+	}
+
+.marker-cluster-large {
+	background-color: rgba(233, 108, 116, 0.6);
+	}
+.marker-cluster-large div {
+	background-color: rgba(223,61,72, 0.6);
+	}
+
+	/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+	background-color: rgb(233, 108, 116);
+	}
+.leaflet-oldie .marker-cluster-small div {
+	background-color: rgb(223,61,72);
+	}
+
+	.leaflet-oldie .marker-cluster-medium {
+		background-color: rgb(233, 108, 116);
+	}
+.leaflet-oldie .marker-cluster-medium div {
+	background-color: rgb(223,61,72);
+	}
+
+.leaflet-oldie .marker-cluster-large {
+	background-color: rgb(233, 108, 116);
+	}
+.leaflet-oldie .marker-cluster-large div {
+	background-color: rgb(223,61,72);
+}
+
+.marker-cluster {
+	background-clip: padding-box;
+	border-radius: 20px;
+	}
+.marker-cluster div {
+	width: 30px;
+	height: 30px;
+	margin-left: 5px;
+	margin-top: 5px;
+	color:#fff;
+	text-align: center;
+	border-radius: 15px;
+	font: 14px "Source Sans Pro", Arial, Helvetica, sans-serif;
+	}
+.marker-cluster span {
+	line-height: 30px;
+
+	}
+
+
+
+
+	.leaflet-control-layers{
+		font: 14px "Source Sans Pro", Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		border-radius:0px;
+		padding:1rem;
+		min-width:250px;
+		background-color: rgba(255,255,255,0.6);
+	}
+
+
+	.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+	    border: 0px solid rgba(0,0,0,0.2);
+	    background-clip: padding-box;
+	}
+
+
+
+	.leaflet-control-layers-expanded {
+		// background-color: rgba(255,255,255,0.5);
+	}
+
+
+#inmaps-filter {
+	font: 14px "Source Sans Pro", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color:#fff;
+	background-color: rgba(223,41,53, 0.9);
+	margin-bottom: 0px;
+	min-width:250px;
+	padding:1rem;
+}
+
+
+
+select.inmaps-select {
+	font: 14px "Source Sans Pro", Arial, Helvetica, sans-serif;
+	// margin: 50px;
+	// max-width: 200px;
+	background:transparent;
+	padding: 5px 35px 5px 5px;
+	font-size: 14px;
+	border: 1px solid darken(rgba(223,41,53, 0.9), 5%);
+	color:#fff;
+	height: 34px;
+	width:100%;
+	text-transform:uppercase;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url(https://fea.assettype.com/nationalherald/assets/arrow_up-44f28ff5dd.png) 96% / 7% no-repeat rgba(223,41,53, 0.9);
+}
+
+
+select:focus{
+  // margin: 50px;
+  // max-width: 200px;
+	border: none;
+}
+/* CAUTION: IE hackery ahead */
+
+
+select.inmaps-select::-ms-expand {
+    display: none; /* remove default arrow in IE 10 and 11 */
+
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select.inmaps-select {
+        background:none\9;
+        padding: 5px\9;
+    }
+}
+
+option.inmaps-option {
+	font: 14px "Source Sans Pro", Arial, Helvetica, sans-serif;
+	// background: rgba(0,0,0,1);
+}

@@ -1,0 +1,36 @@
+$red: rgba(223,41,53, 0.9);
+
+.text-black {
+  color:#000;
+}
+
+.border-grey {
+  border: 2px solid #888;
+  border-radius: 5px;
+}
+
+
+.width-100 {
+  width:100%;
+}
+
+.mar-b-m {
+  margin-bottom: 0.75rem;
+}
+
+.pad-m {
+  padding: 0.75rem;
+}
+
+
+.dropzone {
+  color:darken(#000,40%);
+}
+
+
+.dropzone:hover {
+  border: 2px solid $red;
+  cursor: pointer;
+  // font-family: 'Source Sans Pro', sans-serif;
+  color:$red;
+}

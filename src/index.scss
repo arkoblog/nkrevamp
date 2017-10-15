@@ -1,0 +1,40 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.test {
+  border:1px solid red;
+}
+
+
+// animations
+.fade-appear {
+    opacity: 0.01;
+}
+.fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: ease 1s;
+}
+//
+// Fade in
+.fade-enter {
+  opacity: 0.01;
+
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: ease 1s;
+}
+
+.fade-leave {
+}
+
+.fade-leave .fade-leave-active {
+  transition: ease 1s;
+}

@@ -1,0 +1,48 @@
+
+$white: #fff;
+$black: #000;
+$red: rgba(223,41,53, 0.9);
+
+$grey:#ccc;
+$grey-1: darken($grey,2%);
+$grey-2: darken($grey-1,2%);
+$grey-3: darken($grey-2,2%);
+$grey-4: darken($grey-3,2%);
+
+
+.primary {
+  margin-top: -6rem;
+    // margin-left: 5rem;
+  // margin-right: 8rem;
+}
+
+.title {
+  // font-family: 'Source Sans Pro', serif;
+}
+.bodycontent {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  margin-top:8rem;
+}
+
+.bodycontent h2 {
+  font-size:35px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.bodycontent p {
+  font-size:20px;
+}
+
+
+.underline > a {
+  // text-decoration: underline;
+  cursor: pointer;
+  color: $black;
+  font-weight:bold;
+}
+
+.underline > a:hover {
+  // text-decoration: underline;
+  color: rgba(223,41,53, 1);
+}

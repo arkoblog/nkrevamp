@@ -1,0 +1,40 @@
+$red: rgba(223,41,53, 0.9);
+$white: #fff;
+$off-white:#eaeaea;
+$blue: #08415c;
+
+.boxnav{
+  background-color:$white;
+  font-size:20px;
+  padding:2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  /*margin-top: -10vh;*/
+  /*height:30vh;*/
+}
+
+.boxnav-link {
+  color:#a3a3a3;
+  font-weight:700;
+  padding:0.3rem;
+  font-size: 18px;
+  /*padding-top:5vh;*/
+}
+
+.boxnav-link > a {
+  color:#a3a3a3;
+}
+
+.boxnav-link > a:hover {
+  color:$blue;
+  text-decoration: none;
+}
+
+
+.boxnav-link.active > a{
+  color: $red;
+
+}
+
+.social-media {
+  margin-right: 1rem;
+}

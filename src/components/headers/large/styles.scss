@@ -1,0 +1,158 @@
+$red: rgba(223,41,53, 0.9);
+// $red: rgba(255,99,40, 0.9);
+$white: #fff;
+$off-white:#eaeaea;
+
+.wrapper {
+  transition: 0.4s all ease-in;
+
+  // overflow-x: hidden;
+}
+
+
+
+.wrapper.show {
+  margin-left:-40%;
+  margin-right:40%
+}
+
+.large-sidebar {
+  position: absolute;
+  margin-right:-40%;
+  width:40%;
+  top:0;
+  right:0;
+  min-height: 100%;
+  background-color: $off-white;
+  transition: 0.4s all ease-in;
+}
+
+.large-sidebar.show {
+  margin-right:0%;
+  transition: 0.4s all ease-in;
+}
+
+
+
+.header {
+  height:60vh;
+  background: transparent;
+  background-image: url("http://nilkantha.surge.sh/build/images/neelkantha.png");
+  margin:0 -15px;
+}
+
+.large-nav {
+  padding:1rem 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+}
+
+.large-nav-container {
+  padding:1rem 0;
+  margin: 0;
+}
+
+.logo {
+  background-color: $red;
+  color:$white;
+  display: inline-block;
+  padding:1rem 1rem;
+  float:left;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: $white;
+}
+
+
+
+
+
+
+
+.test-cont {
+  display:block;
+  clear:both;
+
+}
+
+.large-toggle {
+  background-color: $white;
+  border: 1px solid $red;
+  color: $red;
+  display: inline-block;
+  padding:1rem 1.5rem;
+  cursor:pointer;
+  transition: 0.4s ease-in all;
+  float:right;
+}
+
+.large-toggle.show {
+  margin-right:-100%;
+  margin-right:-42vw;
+  transition: 0.4s ease-in all;
+}
+
+.large-toggle:hover {
+  background-color: $off-white;
+}
+
+
+@media (max-width:768px) {
+
+  .large-sidebar {
+    position: absolute;
+    margin-right:-100%;
+    width:100%;
+    top:0;
+    right:0;
+    min-height: 100vh;
+    background-color: $off-white;
+    transition: 0.4s all ease-in;
+  }
+
+  .logo {
+    background-color: $red;
+    color:$white;
+    display: inline-block;
+    padding:1rem 1rem;
+    float:left;
+  }
+
+
+  .large-sidebar.show {
+    margin-right:0%;
+    transition: 0.4s all ease-in;
+  }
+
+  .wrapper.show {
+    margin-left:-100%;
+    margin-right:100%
+  }
+
+  .large-toggle.show {
+    margin-right:-100%;
+    margin-right:-95vw;
+    transition: 0.4s ease-in all;
+  }
+
+}
+
+
+@media (max-width: 575px){
+  .row .span9 {
+      float:left;
+      width:72%;
+  }
+  .row .span3 {
+      float:left;
+      width:28%;
+  }
+
+  .large-toggle.show {
+    margin-right:-450%;
+    transition: 0.4s ease-in all;
+  }
+
+}
